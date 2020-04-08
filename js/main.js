@@ -2,12 +2,13 @@ $(document).ready(function() {
 
     $('.right-footer > #send-msg').click(sendMsg);            // intercetto il click dell'aeroplanino
 
-
     $('.right-footer > input').keypress(function(event) {     // intercetto tasto invio sull'input di testo
         if(event.which == 13) {
             sendMsg();
         }
     });
+
+    $('.contact').click(currentConversation);
 
 
     // FUNZIONE INVIO MESSAGGIO
@@ -44,5 +45,17 @@ $(document).ready(function() {
             }
         })
     })
+
+
+    // FUNZIONE CONVERSAZIONE SELEZIONATA
+    function currentConversation() {
+        var userName = $(this).find('.contact-name').text();
+
+        $('#name').text(userName);
+
+        $('.contact').removeClass('active');
+
+        $(this).addClass('active');
+    }
 
 });

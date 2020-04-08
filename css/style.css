@@ -7,7 +7,7 @@
 }
 
 body {
-    background: rgb(203, 203, 203);
+    background-image: linear-gradient(to bottom, #009688 0px, #009688 15vh, #dddbd1 15vh, #d2dbdc 100% );
     display: flex;
     height: 100vh;
     width: 100vw;
@@ -15,6 +15,12 @@ body {
 
 i {
     color: #B1B1B1;
+    cursor: pointer;
+}
+
+i:hover {
+    color: #009688;
+    transition: 0.4s ease;
 }
 
 h3 {
@@ -34,7 +40,7 @@ h3 {
 .left {
     width: 35%;
     height: 100%;
-    background: rgb(185, 67, 69);
+    background: white;
     border-right: 1px solid white;
 }
 
@@ -71,7 +77,7 @@ h3 {
 
 .left-notifications i {
     font-size: 20px;
-    padding: 15px;
+    padding: 13px;
     background: white;
     border-radius: 50%;
     color: #8edafc;
@@ -107,6 +113,7 @@ h3 {
     align-items: center;
     background: white;
     padding: 0 15px;
+    border-radius: 5px;
 }
 
 .input i {
@@ -131,10 +138,19 @@ h3 {
 .contact {
     height: 80px;
     display: flex;
-    border: 1px solid #EAEAEA;
+    border-bottom: 1px solid #EAEAEA;
     align-items: center;
     padding: 10px 10px 10px 20px;
     background: white;
+    cursor: pointer;
+}
+
+.contact:hover {
+    background: rgb(232, 232, 232);
+}
+
+.active {
+    background: rgb(202, 202, 202);
 }
 
 .contact img {
@@ -191,7 +207,7 @@ h3 {
 /* CORPO DELLA CONVERSAZIONE */
 .chat-wrapper {
     height: calc(100% - 70px - 80px);
-    background: rgb(176, 174, 179);
+    background-image: url(../img/Sfondo.jpg);
     display: flex;
     justify-content: center;
     overflow-y: scroll;
@@ -209,9 +225,19 @@ h3 {
 
 .msg {
     margin-bottom: 10px;
-    padding: 10px 15px;
+    padding: 12px 15px;
     border-radius: 10px;
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+}
+
+.orario {
+    align-self: flex-end;
+    font-size: 10px;
+    padding-top: 5px;
+    color: #6b7376;
 }
 
 .sent {
@@ -236,6 +262,7 @@ h3 {
     font-size: 24px;
     padding: 30px;
 }
+
 
 .right-footer input {
     width: 75%;

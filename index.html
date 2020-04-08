@@ -37,18 +37,18 @@
             <div class="left-search-bar">
                 <div class="input">
                     <i class="fas fa-search"></i>
-                    <input type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
+                    <input id="search-contact" type="text" name="" value="" placeholder="Cerca o inizia una nuova chat">
                 </div>
             </div>
             <!-- LISTA DI CONVERSAZIONI -->
             <div class="contacts-list">
 
                 <!-- BOX SINGOLA CONVERSAZIONE -->
-                <div class="contact">
+                <div class="contact active">
                     <img src="img/avatar1.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Michele</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -56,10 +56,10 @@
                 </div>
                 <!-- 2 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar2.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Fabio</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -67,10 +67,10 @@
                 </div>
                 <!-- 3 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar3.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Samuele</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -78,10 +78,10 @@
                 </div>
                 <!-- 4 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar4.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Alessandro B.</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -89,10 +89,10 @@
                 </div>
                 <!-- 5 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar5.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Alessandro L.</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -100,10 +100,10 @@
                 </div>
                 <!-- 6 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar6.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Claudia</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -111,10 +111,10 @@
                 </div>
                 <!-- 7 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar7.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Davide</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -122,10 +122,10 @@
                 </div>
                 <!-- 8 -->
                 <div class="contact">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img src="img/avatar8.jpg" alt="">
                     <div class="contact-text">
                         <div class="contact-info">
-                            <h3>Alessandro</h3>
+                            <h3 class="contact-name">Federico</h3>
                             <p>Ok, a domani</p>
                         </div>
                         <span class="time">12.12</span>
@@ -133,15 +133,16 @@
                 </div>
             </div>
         </div>
+
         <!-- RIGHT SIDE -->
         <div class="right">
             <!-- HEADER (come quello a sinistra) -->
             <div class="left-header">
                 <div class="profile-box">
-                    <img src="img/avatar1.jpg" alt="">
+                    <img id="user-img" src="img/avatar1.jpg" alt="">
                     <div class="profile-info">
-                        <h3>Alessandro</h3>
-                        <p>Ultimo accesso ore 12.21</p>
+                        <h3 id="name">Michele</h3>
+                        <p>Ultimo accesso oggi alle ore 12.21</p>
                     </div>
                 </div>
                 <div class="controls">
@@ -155,12 +156,15 @@
                 <div class="chat">
                     <div class="msg sent">
                         <span>Ciao! Come stai?</span>
+                        <!-- <span class="orario">15.48</span> -->
                     </div>
                     <div class="msg recieved">
                         <span>Ciao! Come stai?</span>
+                        <!-- <span class="orario">15.48</span> -->
                     </div>
                     <div class="msg sent">
                         <span>Ciao! Come stai?</span>
+                        <!-- <span class="orario">15.48</span> -->
                     </div>
                 </div>
             </div>

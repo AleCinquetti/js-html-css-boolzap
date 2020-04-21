@@ -220,6 +220,11 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    display: none;
+}
+
+.active-chat {
+    display: flex;
 }
 
 
@@ -230,8 +235,21 @@ h3 {
     font-size: 15px;
     font-weight: 500;
     display: flex;
-    flex-direction: column;
+    /* flex-direction: column; */
+    align-items: center;
+    cursor: pointer;
+    position: relative;
 }
+
+.msg i {
+    margin: 0 3px;
+    display: none;
+}
+
+.msg:hover i {
+    display: block;
+}
+
 
 .orario {
     align-self: flex-end;
@@ -242,11 +260,29 @@ h3 {
 
 .sent {
     background: #d5f9ba;
+
 }
 
 .recieved {
     background: white;
     align-self: flex-start;
+}
+
+.message-info {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    background: white;
+    padding: 5px;
+    list-style: none;
+    top: 50px;
+    z-index: 999;
+    display: none;
+}
+
+.message-info li {
+    padding: 5px 0;
+    cursor: pointer;
 }
 
 /* INPUT PER INVIO MESSAGGI  */

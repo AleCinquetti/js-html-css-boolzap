@@ -49,13 +49,37 @@ $(document).ready(function() {
 
     // FUNZIONE CONVERSAZIONE SELEZIONATA
     function currentConversation() {
-        var userName = $(this).find('.contact-name').text();
 
+        var clickedUser = $(this).index();
+        var chatList = $('.chat-wrapper > div');
+
+        chatList.removeClass("active-chat");
+        $(this).addClass("active");
+
+        $('.contact').not(this).removeClass("active");
+        chatList.eq(clickedUser).addClass("active-chat");
+
+        var userName = $(this).find('.contact-name').text();
         $('#name').text(userName);
 
-        $('.contact').removeClass('active');
+        var userImg = $(this).find('.contact-img').html();
+        $('.header-img').html(userImg);
 
+        $('.contact').removeClass('active');
         $(this).addClass('active');
+
+
+
     }
+
+    $('.chat').on("click", ".message-info > #canc",
+        function () {
+            $(this).closest('.msg').remove();
+    })
+
+    $('.chat').on("click", ".msg i",
+        function () {
+            $(this).siblings().toggleClass("message-info");
+    })
 
 });
